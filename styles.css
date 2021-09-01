@@ -1,113 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-#top{
-    display: flex;
-    justify-content: space-around;
-    background-color:#1261a0;
-    height: 45%;
-    padding: 0.5%;
-
+#top {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1261a0;
+  height: 45%;
+  padding: 0.5%;
 }
 
-#search input{
-    height: 30px;
-    width: 70%;
-    margin-top: 1.5%;
-    margin-left: 1%;
-    padding-left: 10px;
+#search input {
+  height: 30px;
+  width: 70%;
+  margin-top: 1.5%;
+  margin-left: 1%;
+  padding-left: 10px;
 }
 
-#search button{
-    height: 30px;
-    width: 40px;
-    background-color:black;
-    border: none;
-    color: white;
-    margin-top: 1.5%;
+#search button {
+  height: 30px;
+  width: 40px;
+  background-color: black;
+  border: none;
+  color: white;
+  margin-top: 1.5%;
 }
 
-#search{
-    display: flex;
-    justify-content: center;
-    width: 30%;
+#bar:focus {
+  outline: none;
+  border: none;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  width: 30%;
 }
 
 #icons i {
-    font-size: 25px;
-    color: white;
-    margin-top: 20%;
-    padding-right: 4px;
+  font-size: 25px;
+  color: white;
+  margin-top: 20%;
+  padding-right: 4px;
 }
 
-#heading{
-    color: white;
-    font-family: 'Dancing Script', cursive;
-    font-size: 37px;
+#heading {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 37px;
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; 
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #1261a0;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #1261a0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.task-head {
+  margin: 1% 0% 0% 1%;
+}
+
+.task-head h2 {
+  color: #34373d;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.task-head p {
+  color: #34373d;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.task-container {
+  margin: 1% 0% 0% 1%;
+  border-bottom: 1px solid lightgray;
+  padding: 5px;
+}
+
+.input-task {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  width: 100%;
+}
+
+.input-task::placeholder {
+  font-family: Impact, sans-serif;
+  color: #8b8d90;
+}
+
+.input-task:focus {
+  outline: none;
+  border: none;
+}
