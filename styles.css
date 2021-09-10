@@ -134,16 +134,18 @@
 }
 
 .task-container {
+  display: flex;
+  justify-content: center;
   margin: 1% 0% 0% 1%;
   border-bottom: 1px solid lightgray;
   padding: 5px;
 }
 
 .input-task {
-  border: none !important;
-  background: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
   width: 100%;
 }
 
@@ -155,4 +157,15 @@
 .input-task:focus {
   outline: none;
   border: none;
+}
+
+#add-task {
+  background: transparent;
+  border: transparent;
+  padding: 0.5%;
+}
+
+#add-task i {
+  font-size: 15px;
+  color: #bababb;
 }
