@@ -11,6 +11,7 @@ let taskDiv = document.querySelector("#taskDiv");
 let all = document.querySelector(".allBtn");
 let important = document.querySelector(".importantBtn");
 let planned = document.querySelector(".plannedBtn");
+let button = document.querySelector("#myBtn");
 
 // Adds Task
 addNewTask.addEventListener("submit", function (e) {
@@ -32,6 +33,7 @@ addNewTask.addEventListener("submit", function (e) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
+      inputDiv.value = "";
       taskDiv.innerHTML = "";
       getTasks();
     });
@@ -46,9 +48,6 @@ function showTasks(task) {
   task = "";
 
   newTask.addEventListener("dblclick", function () {
-    taskDiv.removeChild(newTask);
-    console.log();
-
     // Delete task
     fetch(
       "https://capstone-final-project1.herokuapp.com/delete-task/" +
