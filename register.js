@@ -19,6 +19,6 @@ function register() {
     .then((response) => console.log(response.json()))
     .then(() => {
       alert("Successfully Registered");
-      // window.location = "./login.html";
+      window.location = "./login.html";
     });
 }
