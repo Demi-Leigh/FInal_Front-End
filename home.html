@@ -20,8 +20,13 @@
       </div>
 
       <div id="icons">
-        <i class="fas fa-user"></i>
-        <i class="fas fa-caret-down"></i>
+        <button class="account">
+          <i class="fas fa-user"></i>
+        </button>
+
+        <a href="./login.html" class="signOut">
+          <i class="fas fa-caret-down"></i>
+        </a>
       </div>
     </div>
 
@@ -32,8 +37,9 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Important</a>
-          <a href="#">Planned</a>
+          <p class="allBtn">All</p>
+          <p class="importantBtn">Important</p>
+          <p class="plannedBtn">Planned</p>
         </div>
       </div>
     </div>
@@ -44,12 +50,23 @@
         <p id="Date"></p>
       </div>
 
-      <div class="task-container">
-        <button id="add-task" type="button"><i class="fas fa-plus"></i></button>
-        <input type="text" placeholder="Add A Task" class="input-task" />
-      </div>
+      <form class="task-container">
+        <select class="input-category">
+          <option value="Important">Important</option>
+          <option value="Planned">Planned</option>
+        </select>
+        <div class="task-holder">
+          <input type="text" placeholder="Add A Task" class="input-task" />
+          <button id="add-task" type="submit">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </form>
+
+      <div id="taskDiv"></div>
+      <div class="background-lines"></div>
     </section>
 
-    <script src="./scripts.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>

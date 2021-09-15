@@ -1,0 +1,46 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1261a0;
+}
+
+.account-card {
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding-top: 5px;
+}
+
+#name-input {
+  padding: 0.5%;
+  margin: 1% 0% 1% 1%;
+}
+
+.account-card h1 {
+  margin: 3% 0% 0% 1%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row p {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.input {
+  margin-left: 5%;
+}
+
+.input1 {
+  margin-left: 5%;
+}
