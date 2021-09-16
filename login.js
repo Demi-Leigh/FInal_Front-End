@@ -14,10 +14,19 @@ function login() {
     },
     body: JSON.stringify(userInfo),
   })
-    .then((response) => console.log(response.json()))
+    .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      alert("Successfully Registered");
-      window.location = "./home.html";
+      let user = data.user;
+      if (
+        user != null &&
+        userInfo["username"] === user[2] &&
+        userInfo["password"] === user[3]
+      ) {
+        JSON.stringify(localStorage.setItem("usersinfo", userInfo));
+        alert("Successfully Logged In");
+        window.location = "./home.html";
+      } else if (user === null) {
+        alert("Incorrect Details or Not Registered!!");
+      }
     });
 }

@@ -9,7 +9,7 @@
   </head>
   <body>
     <section id="form-container">
-      <form onsubmit="login()" class="form">
+      <form onsubmit=" event.preventDefault(); login()" class="form">
         <input type="text" class="username" placeholder="Username *" required />
         <input
           type="password"

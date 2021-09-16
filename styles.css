@@ -46,6 +46,7 @@
   font-size: 27px;
   margin-top: 20%;
   padding-right: 4px;
+  color: black;
 }
 
 .signOut i {
@@ -178,6 +179,7 @@
   box-shadow: none;
   border-radius: 0;
   width: 99%;
+  font-size: 15px;
 }
 
 .input-task::placeholder {
@@ -220,6 +222,7 @@ li {
 
 li::before {
   content: "♠";
+  margin-right: 1%;
 }
 
 .container {

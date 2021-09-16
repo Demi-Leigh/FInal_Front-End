@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   margin-top: 5%;
   padding-top: 5px;
+  padding: 2%;
 }
 
 #name-input {
@@ -23,7 +24,7 @@ body {
 }
 
 .account-card h1 {
-  margin: 3% 0% 0% 1%;
+  margin: 3% 0% 0% 3%;
 }
 
 .row {
@@ -40,15 +41,18 @@ body {
 
 .input {
   margin-left: 3%;
+  padding: 0.5%;
 }
 
 .input1 {
   margin-left: 3%;
+  padding: 0.5%;
 }
 
 .input2 {
   margin-left: 3%;
   margin-bottom: 3%;
+  padding: 0.5%;
 }
 
 .head {
@@ -57,5 +61,6 @@ body {
 }
 
 .head a {
-  font-size: 50px;
+  font-size: 20px;
+  color: black;
 }
